@@ -22,6 +22,11 @@ archivesBaseName = mod_id
 java.toolchain.languageVersion = JavaLanguageVersion.of(17) // Mojang ships Java 8 to end users, so your mod should target Java 8.
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
+//just for compatilily
+sourceSets {
+    onlyMain {
+    }
+}
 minecraft {
     // The mappings can be changed at any time, and must be in the following format.
     // Channel:   Version:
@@ -175,13 +180,13 @@ dependencies {
     implementation fg.deobf("curse.maven:kiwi-303657:5063293")
     implementation fg.deobf("curse.maven:fruit-trees-355467:4799298")
 
-    runtimeOnly fg.deobf("curse.maven:cc-tweaked-282001:5005332")
+    onlyMainRuntimeOnly  fg.deobf("curse.maven:cc-tweaked-282001:5005332")
 //    runtimeOnly fg.deobf("curse.maven:crafttweaker-239197:4277433")
 
-    runtimeOnly fg.deobf("curse.maven:minemenu-222378:4825141")
-    runtimeOnly fg.deobf("curse.maven:journeymap-32274:4532924")
-    runtimeOnly fg.deobf("curse.maven:jade-324717:4914105")
-    runtimeOnly fg.deobf("curse.maven:jei-238222:5106178")
+    onlyMainRuntimeOnly  fg.deobf("curse.maven:minemenu-222378:4825141")
+    onlyMainRuntimeOnly  fg.deobf("curse.maven:journeymap-32274:4532924")
+    onlyMainRuntimeOnly  fg.deobf("curse.maven:jade-324717:4914105")
+    onlyMainRuntimeOnly  fg.deobf("curse.maven:jei-238222:5106178")
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"
