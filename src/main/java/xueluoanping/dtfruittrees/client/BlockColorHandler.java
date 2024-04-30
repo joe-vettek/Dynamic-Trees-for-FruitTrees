@@ -18,11 +18,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import snownee.fruits.block.FruitLeavesBlock;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-@OnlyIn(Dist.CLIENT)
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class BlockColorHandler {
     @SubscribeEvent
-    @OnlyIn(Dist.CLIENT)
     public static void handleBlockColor(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             BlockState birchLeaves = Blocks.BIRCH_LEAVES.defaultBlockState();
@@ -117,7 +115,7 @@ public class BlockColorHandler {
     }
 
     @SubscribeEvent
-    @OnlyIn(Dist.CLIENT)
+
     public static void registerJsonColorMultipliers(ColorHandlerEvent.Block event) {
         // Register programmable custom block color providers for LeavesPropertiesJson
 
