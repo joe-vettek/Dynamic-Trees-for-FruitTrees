@@ -31,6 +31,7 @@
     "fruits":[
         "dtfruitfulfun:redlove"
     ],
+    "drop_seeds": false,
     "features":[
         {
             "name":"dtfruitfulfun:fallen_leaves",

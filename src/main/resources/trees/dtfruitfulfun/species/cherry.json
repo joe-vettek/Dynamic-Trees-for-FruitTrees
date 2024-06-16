@@ -28,6 +28,7 @@
     "fruits":[
         "dtfruitfulfun:cherry"
     ],
+    "drop_seeds": false,
     "features":[
         {
             "name":"dtfruitfulfun:fallen_leaves",

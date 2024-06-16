@@ -29,6 +29,7 @@
     "fruits":[
         "dtfruitfulfun:pomelo"
     ],
+    "drop_seeds": false,
     "features":[
         {
             "name":"fruit",

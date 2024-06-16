@@ -29,6 +29,7 @@
   "fruits": [
     "dtfruitfulfun:citron"
   ],
+  "drop_seeds": false,
   "features": [
     {
       "name": "fruit",

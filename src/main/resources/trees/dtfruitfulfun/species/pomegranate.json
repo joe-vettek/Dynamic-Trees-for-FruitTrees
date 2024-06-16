@@ -31,6 +31,7 @@
     "fruits":[
         "dtfruitfulfun:pomegranate"
     ],
+    "drop_seeds": false,
     "features":[
         {
             "name":"fruit",

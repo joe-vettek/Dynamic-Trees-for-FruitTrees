@@ -29,6 +29,7 @@
     "fruits":[
         "dtfruitfulfun:lime"
     ],
+    "drop_seeds": false,
     "features":[
         {
             "name":"fruit",
