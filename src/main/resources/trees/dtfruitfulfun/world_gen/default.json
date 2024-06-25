@@ -1,7 +1,23 @@
 [
   {
     "select": {
-      "tag": "#minecraft:is_jungle"
+      "tag": "#c:jungle"
+    },
+    "apply": {
+      "species": {
+        "method": "splice_before",
+        "random": {
+          "dtfruitfulfun:citron": 1,
+          "dtfruitfulfun:lime": 1,
+          "dtfruitfulfun:tangerine": 1,
+          "...": 40
+        }
+      }
+    }
+  },
+  {
+    "select": {
+      "tag": "#c:tree_coniferous"
     },
     "apply": {
       "species": {
@@ -17,7 +33,12 @@
   },
   {
     "select": {
-      "tag": "#minecraft:is_forest"
+      "names_or": [
+        "minecraft:deep_dark",
+        "minecraft:dripstone_caves",
+        "minecraft:plains",
+        "minecraft:sunflower_plains"
+      ]
     },
     "apply": {
       "species": {
@@ -26,23 +47,7 @@
           "dtfruitfulfun:citron": 1,
           "dtfruitfulfun:lime": 1,
           "dtfruitfulfun:tangerine": 1,
-          "...": 60
-        }
-      }
-    }
-  },
-  {
-    "select": {
-      "tag": "#forge:is_plains"
-    },
-    "apply": {
-      "species": {
-        "method": "splice_before",
-        "random": {
-          "dtfruitfulfun:citron": 1,
-          "dtfruitfulfun:lime": 1,
-          "dtfruitfulfun:tangerine": 1,
-          "...": 150
+          "...": 75
         }
       }
     }

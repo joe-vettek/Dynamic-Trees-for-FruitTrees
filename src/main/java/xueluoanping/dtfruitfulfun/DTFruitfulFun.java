@@ -2,6 +2,7 @@ package xueluoanping.dtfruitfulfun;
 
 import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
 
+import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -12,6 +13,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import snownee.fruits.FFCommonConfig;
 import xueluoanping.dtfruitfulfun.data.start;
+
 
 import java.util.Objects;
 
@@ -25,6 +27,7 @@ public class DTFruitfulFun {
     public static final boolean useLogger=Objects.equals(System.getProperty("forgegradle.runs.dev"), "true");
 
     public DTFruitfulFun() {
+
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -40,8 +43,6 @@ public class DTFruitfulFun {
         MinecraftForge.EVENT_BUS.register(this);
         // MinecraftForge.EVENT_BUS.register(TreeGrowHandler.instance);
         RegistryHandler.setup(MOD_ID);
-
-
 
     }
 
