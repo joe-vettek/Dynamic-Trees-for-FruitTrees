@@ -34,8 +34,6 @@
   {
     "select": {
       "names_or": [
-        "minecraft:deep_dark",
-        "minecraft:dripstone_caves",
         "minecraft:plains",
         "minecraft:sunflower_plains"
       ]
@@ -47,9 +45,30 @@
           "dtfruitfulfun:citron": 1,
           "dtfruitfulfun:lime": 1,
           "dtfruitfulfun:tangerine": 1,
-          "...": 75
+          "...": 12
         }
       }
+    }
+  },
+  {
+    "select": {
+      "names_or": [
+        "minecraft:deep_dark",
+        "minecraft:dripstone_caves"
+      ]
+    },
+    "apply": {
+      "species": {
+        "method": "splice_before",
+        "random": {
+          "dtfruitfulfun:citron": 1,
+          "dtfruitfulfun:lime": 1,
+          "dtfruitfulfun:tangerine": 1,
+          "...": 75
+        }
+      },
+      "density": [1],
+      "chance": 1
     }
   }
 ]
