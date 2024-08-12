@@ -3,6 +3,7 @@
   "type": "dtfruitfulfun:fly_passable",
   "block_registry_name": "redlove",
   "item_stack": "fruitfulfun:redlove",
+  "season_offset": 2.0,
   "block_shapes": [
     {
       "function": "fruit",

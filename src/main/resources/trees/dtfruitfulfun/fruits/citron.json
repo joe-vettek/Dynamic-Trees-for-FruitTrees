@@ -3,6 +3,7 @@
   "type": "dtfruitfulfun:fly_passable",
   "block_registry_name": "citron",
   "item_stack": "fruitfulfun:citron",
+  "season_offset": 3.0,
   "block_shapes": [
     {
       "function": "fruit",

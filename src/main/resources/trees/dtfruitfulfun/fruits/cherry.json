@@ -3,6 +3,7 @@
   "type": "dtfruitfulfun:fly_passable",
   "block_registry_name": "cherry",
   "item_stack": "fruitfulfun:cherry",
+  "season_offset": 2.0,
   "block_shapes": [
     {
       "function": "fruit",
